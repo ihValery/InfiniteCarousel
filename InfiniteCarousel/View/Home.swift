@@ -54,7 +54,7 @@ struct Home: View {
                     //Carusel Slider
                     InfiniteCarouselView(tabs: $tabs, currentIndex: $currentIndex)
                 }
-                .padding()
+//                .padding()
                 .frame(maxWidth: .infinity, alignment: .center)
             }
             
