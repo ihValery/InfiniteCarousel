@@ -30,7 +30,7 @@ struct InfiniteCarouselView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color.black)
                 .cornerRadius(30)
-                .padding(.horizontal, getRect().height < 750 ? 10 : 50)
+                .padding(.horizontal, getRect().height < 750 ? 30 : 50)
                 
                 //Для аниированного перехода
                 .overlay(
@@ -39,6 +39,7 @@ struct InfiniteCarouselView: View {
                             .preference(key: OffsetKey.self, value: gr.frame(in: .global).minX)
                     }
                 )
+                
                 .onPreferenceChange(OffsetKey.self, perform: { offset in
                     self.offset = offset
                 })
