@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct Home: View {
+    
+    @State var tabs: [Tab] = [
+        Tab(number: 1),
+        Tab(number: 2),
+        Tab(number: 3),
+        Tab(number: 4),
+        Tab(number: 5),
+        Tab(number: 6)
+    ]
+    
+    @State var currentIndex: Int = 0
+    
     var body: some View {
         VStack(spacing: 0) {
-            TopPanelButton()
+            TopPanel()
                 .overlay(
                     //Custom page indicator
                     HStack(spacing: 4) {
@@ -20,28 +32,27 @@ struct Home: View {
                 .padding()
             
             //ScrollView for adapting for small screens
-            ScrollView(getRect().height < 750 ? .vertical : .init(), showsIndicators: false) {
+//            ScrollView(getRect().height < 750 ? .vertical : .init(), showsIndicators: false) {
+            ScrollView(.init(), showsIndicators: false) {
                 VStack(spacing: 20) {
-                    Text("Prepare training")
-                        .fontWeight(.bold)
-                        .foregroundColor(.white.opacity(0.6))
-                        .padding(.top, 20)
-                    
-                    Text("Let's create a\ntraning plan\nfor you!")
-                        .font(.system(size: 38, weight: .bold))
-                        .multilineTextAlignment(.center)
-                        .lineLimit(3)
+                    Text("Infinite Carousel")
+                        .bold()
                         .foregroundColor(.white)
                     
+//                    Text("Let's create a\ntraning plan\nfor you!")
+//                        .font(.largeTitle.bold())
+//                        .multilineTextAlignment(.center)
+//                        .lineLimit(3)
+//                        .foregroundColor(.white)
+                    
                     //Carusel Slider
-                    TabView {
-                        
-                    }
-                    .tabViewStyle(.page(indexDisplayMode: .never))
+                    InfiniteCarouselView(tabs: $tabs, currentIndex: $currentIndex)
                 }
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .center)
             }
+            
+            BottomPanel()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
