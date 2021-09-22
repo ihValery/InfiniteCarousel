@@ -37,7 +37,6 @@ struct TopPanel: View {
                             .strokeBorder(Color.white.opacity(0.6), lineWidth: 1)
                     )
             }
-            
         }
     }
 }
