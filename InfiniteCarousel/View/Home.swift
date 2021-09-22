@@ -12,10 +12,11 @@ struct Home: View {
     @State var tabs: [Tab] = [
         Tab(number: 1),
         Tab(number: 2),
-        Tab(number: 3),
-        Tab(number: 4),
-        Tab(number: 5),
-        Tab(number: 6)
+        Tab(number: 3)
+        //,
+//        Tab(number: 4),
+//        Tab(number: 5),
+//        Tab(number: 6)
     ]
     
     @State var currentIndex: Int = 0
@@ -25,8 +26,13 @@ struct Home: View {
             TopPanel()
                 .overlay(
                     //Custom page indicator
-                    HStack(spacing: 4) {
-                        
+                    HStack(spacing: 5) {
+                        ForEach(tabs.indices, id: \.self) { index in
+                            Capsule()
+                                .fill(Color.white.opacity(currentIndex == index ? 1 : 0.5))
+                                .frame(width: currentIndex == index ? 18 : 4, height: 4)
+                                .animation(.easeInOut, value: currentIndex)
+                        }
                     }
                 )
                 .padding()
@@ -52,7 +58,20 @@ struct Home: View {
                 .frame(maxWidth: .infinity, alignment: .center)
             }
             
-            BottomPanel()
+//            BottomPanel()
+            Button {
+                tabs.append(Tab(number: Int.random(in: 10...20)))
+            } label: {
+                Text("Добавление real time")
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .frame(width: 200, height: 40)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .strokeBorder(Color.white.opacity(0.6), lineWidth: 1)
+                    )
+            }
+            
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
