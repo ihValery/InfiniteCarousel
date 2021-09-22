@@ -23,27 +23,31 @@ struct Home: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            TopPanel()
-                .overlay(
-                    //Custom page indicator
-                    HStack(spacing: 5) {
-                        ForEach(tabs.indices, id: \.self) { index in
-                            Capsule()
-                                .fill(Color.white.opacity(currentIndex == index ? 1 : 0.5))
-                                .frame(width: currentIndex == index ? 18 : 4, height: 4)
-                                .animation(.easeInOut, value: currentIndex)
-                        }
-                    }
-                )
-                .padding()
+//            TopPanel()
+//                .overlay(
+//                    //Custom page indicator
+//                    HStack(spacing: 5) {
+//                        ForEach(tabs.indices, id: \.self) { index in
+//                            Capsule()
+//                                .fill(Color.white.opacity(currentIndex == index ? 1 : 0.5))
+//                                .frame(width: currentIndex == index ? 18 : 4, height: 4)
+//                                .animation(.easeInOut, value: currentIndex)
+//                        }
+//                    }
+//                )
+//                .padding()
             
             //ScrollView for adapting for small screens
 //            ScrollView(getRect().height < 750 ? .vertical : .init(), showsIndicators: false) {
             ScrollView(.init(), showsIndicators: false) {
                 VStack(spacing: 20) {
                     Text("Infinite Carousel")
-                        .bold()
+                        .font(.largeTitle)
+                        .fontWeight(.black)
                         .foregroundColor(.white)
+                        .shadow(color: .white.opacity(0.6), radius: 10, x: 1, y: 1)
+                        .padding(.top, getRect().height < 750 ? 30 : 50)
+                    Spacer()
                     
 //                    Text("Let's create a\ntraning plan\nfor you!")
 //                        .font(.largeTitle.bold())
@@ -53,29 +57,45 @@ struct Home: View {
                     
                     //Carusel Slider
                     InfiniteCarouselView(tabs: $tabs, currentIndex: $currentIndex)
+                    
+                    Spacer()
                 }
 //                .padding()
                 .frame(maxWidth: .infinity, alignment: .center)
             }
             
-//            BottomPanel()
-            Button {
-                tabs.append(Tab(number: Int.random(in: 10...20)))
-            } label: {
-                Text("Добавление real time")
-                    .fontWeight(.semibold)
-                    .foregroundColor(.white)
-                    .frame(width: 200, height: 40)
-                    .background(
-                        RoundedRectangle(cornerRadius: 10)
-                            .strokeBorder(Color.white.opacity(0.6), lineWidth: 1)
-                    )
+            //Custom page indicator
+            HStack(spacing: 5) {
+                ForEach(tabs.indices, id: \.self) { index in
+                    Capsule()
+                        .fill(Color.white.opacity(currentIndex == index ? 1 : 0.5))
+                        .frame(width: currentIndex == index ? 18 : 4, height: 4)
+                        .shadow(color: .white.opacity(0.6), radius: 10, x: 1, y: 1)
+                        .animation(.easeInOut)
+                }
             }
+            .padding(.bottom, 50)
+            
+//            BottomPanel()
+//            Button {
+//                tabs.append(Tab(number: Int.random(in: 10...20)))
+//            } label: {
+//                Text("Добавление real time")
+//                    .fontWeight(.semibold)
+//                    .foregroundColor(.white)
+//                    .frame(width: 200, height: 40)
+//                    .background(
+//                        RoundedRectangle(cornerRadius: 10)
+//                            .strokeBorder(Color.white.opacity(0.6), lineWidth: 1)
+//                    )
+//            }
             
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
-            LinearGradient(colors: [Color.blueApp, .purpleApp], startPoint: .top, endPoint: .bottom)
+            Image("background")
+                .resizable()
+//            LinearGradient(colors: [Color.blueApp, .purpleApp], startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             
         )
