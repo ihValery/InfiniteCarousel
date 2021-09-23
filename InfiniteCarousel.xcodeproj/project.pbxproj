@@ -20,6 +20,8 @@
 		80BDC28A26FBA2D600D7F07A /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC28926FBA2D600D7F07A /* Tab.swift */; };
 		80BDC28C26FBA40500D7F07A /* InfiniteCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC28B26FBA40500D7F07A /* InfiniteCarouselView.swift */; };
 		80BDC28E26FBB4C200D7F07A /* OffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC28D26FBB4C200D7F07A /* OffsetKey.swift */; };
+		80BDC29126FC19A100D7F07A /* OrnamentalVersals.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80BDC29026FC19A100D7F07A /* OrnamentalVersals.ttf */; };
+		80BDC29326FC1AA600D7F07A /* CustomFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC29226FC1AA600D7F07A /* CustomFontModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +39,9 @@
 		80BDC28926FBA2D600D7F07A /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		80BDC28B26FBA40500D7F07A /* InfiniteCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCarouselView.swift; sourceTree = "<group>"; };
 		80BDC28D26FBB4C200D7F07A /* OffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetKey.swift; sourceTree = "<group>"; };
-		80BDC28F26FBEC5F00D7F07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		80BDC28F26FBEC5F00D7F07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80BDC29026FC19A100D7F07A /* OrnamentalVersals.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OrnamentalVersals.ttf; sourceTree = "<group>"; };
+		80BDC29226FC1AA600D7F07A /* CustomFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +80,9 @@
 				8022A6F626FB78C4000F5984 /* View */,
 				8022A6F726FB825E000F5984 /* Extension */,
 				80BDC28626FB9BF000D7F07A /* Helper */,
-				8022A6EB26FB76B7000F5984 /* Assets.xcassets */,
 				80BDC28F26FBEC5F00D7F07A /* Info.plist */,
+				8022A6EB26FB76B7000F5984 /* Assets.xcassets */,
+				80BDC29026FC19A100D7F07A /* OrnamentalVersals.ttf */,
 				8022A6ED26FB76B7000F5984 /* Preview Content */,
 			);
 			path = InfiniteCarousel;
@@ -124,6 +129,7 @@
 			children = (
 				80BDC28726FB9C2A00D7F07A /* CustomCorners.swift */,
 				80BDC28D26FBB4C200D7F07A /* OffsetKey.swift */,
+				80BDC29226FC1AA600D7F07A /* CustomFontModifier.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -187,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8022A6EF26FB76B7000F5984 /* Preview Assets.xcassets in Resources */,
+				80BDC29126FC19A100D7F07A /* OrnamentalVersals.ttf in Resources */,
 				8022A6EC26FB76B7000F5984 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +213,7 @@
 				8022A6FB26FB8321000F5984 /* Home.swift in Sources */,
 				80BDC28826FB9C2A00D7F07A /* CustomCorners.swift in Sources */,
 				80BDC28A26FBA2D600D7F07A /* Tab.swift in Sources */,
+				80BDC29326FC1AA600D7F07A /* CustomFontModifier.swift in Sources */,
 				8022A6F926FB827B000F5984 /* Color.swift in Sources */,
 				80BDC28E26FBB4C200D7F07A /* OffsetKey.swift in Sources */,
 				80BDC28526FB9B2B00D7F07A /* BottomPanel.swift in Sources */,

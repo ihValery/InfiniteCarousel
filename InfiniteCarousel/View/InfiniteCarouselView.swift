@@ -22,15 +22,19 @@ struct InfiniteCarouselView: View {
                 VStack(spacing: 0) {
                     
                     Text("\(tab.number)")
-                        .font(.system(size: getRect().height < 750 ? 300 : 450, weight: .bold, design: .default))
+                        .ornamentalVersals(size: getRect().height < 750 ? 300 : 390)
+//                        .font(.system(size: getRect().height < 750 ? 300 : 450, weight: .bold, design: .default))
+//                        .multilineTextAlignment(.center)
+                        .offset(x: 10, y: -30)
                         .foregroundColor(.yellow)
-                        .shadow(color: .yellow.opacity(0.6), radius: 10, x: 1, y: 1)
+                        .shadow(color: .yellow.opacity(0.6), radius: 10, x: 0, y: 0)
+                    
                 }
-                .padding(.horizontal, 20)
+//                .padding(.horizontal, 20)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
 //                .background(Color.black)
 //                .cornerRadius(30)
-                .padding(.horizontal, getRect().height < 750 ? 30 : 50)
+//                .padding(.horizontal, getRect().height < 750 ? 30 : 50)
                 
                 //Для аниированного перехода
                 .overlay(
