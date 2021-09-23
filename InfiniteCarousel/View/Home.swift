@@ -13,10 +13,9 @@ struct Home: View {
         Tab(number: 1),
         Tab(number: 2),
         Tab(number: 3)
-        //,
+//        ,
 //        Tab(number: 4),
-//        Tab(number: 5),
-//        Tab(number: 6)
+//        Tab(number: 5)
     ]
     
     @State var currentIndex: Int = 0
@@ -41,12 +40,19 @@ struct Home: View {
 //            ScrollView(getRect().height < 750 ? .vertical : .init(), showsIndicators: false) {
             ScrollView(.init(), showsIndicators: false) {
                 VStack(spacing: 20) {
-                    Text("Infinite Carousel")
-                        .font(.largeTitle)
-                        .fontWeight(.black)
-                        .foregroundColor(.white)
-                        .shadow(color: .white.opacity(0.6), radius: 10, x: 1, y: 1)
-                        .padding(.top, getRect().height < 750 ? 30 : 50)
+                    VStack {
+                        Text("  I").foregroundColor(.yellow) + Text("nfinite").foregroundColor(.white)
+                        Text("  C").foregroundColor(.yellow) + Text("arousel").foregroundColor(.white)
+                    }
+                    .frame(maxWidth: .infinity)
+                    .fixedSize()
+                    .ornamentalVersals(size: 48)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.white)
+                    .shadow(color: .white.opacity(0.6), radius: 20, x: 1, y: 1)
+                    .offset(x: -15)
+                    .padding(.top, getRect().height < 750 ? 16 : 50)
+                    
                     Spacer()
                     
 //                    Text("Let's create a\ntraning plan\nfor you!")
