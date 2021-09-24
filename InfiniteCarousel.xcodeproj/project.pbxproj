@@ -22,6 +22,7 @@
 		80BDC28E26FBB4C200D7F07A /* OffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC28D26FBB4C200D7F07A /* OffsetKey.swift */; };
 		80BDC29126FC19A100D7F07A /* OrnamentalVersals.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80BDC29026FC19A100D7F07A /* OrnamentalVersals.ttf */; };
 		80BDC29326FC1AA600D7F07A /* CustomFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC29226FC1AA600D7F07A /* CustomFontModifier.swift */; };
+		80BDC29726FE85A100D7F07A /* PageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC29626FE85A000D7F07A /* PageIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		80BDC28F26FBEC5F00D7F07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80BDC29026FC19A100D7F07A /* OrnamentalVersals.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OrnamentalVersals.ttf; sourceTree = "<group>"; };
 		80BDC29226FC1AA600D7F07A /* CustomFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontModifier.swift; sourceTree = "<group>"; };
+		80BDC29626FE85A000D7F07A /* PageIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				8022A6FA26FB8321000F5984 /* Home.swift */,
+				80BDC29626FE85A000D7F07A /* PageIndicator.swift */,
 				80BDC28026FB8A8E00D7F07A /* TopPanel.swift */,
 				80BDC28426FB9B2B00D7F07A /* BottomPanel.swift */,
 				80BDC28B26FBA40500D7F07A /* InfiniteCarouselView.swift */,
@@ -209,6 +212,7 @@
 				8022A6EA26FB76B4000F5984 /* ContentView.swift in Sources */,
 				80BDC28C26FBA40500D7F07A /* InfiniteCarouselView.swift in Sources */,
 				80BDC28326FB8C7F00D7F07A /* View.swift in Sources */,
+				80BDC29726FE85A100D7F07A /* PageIndicator.swift in Sources */,
 				8022A6E826FB76B4000F5984 /* InfiniteCarouselApp.swift in Sources */,
 				8022A6FB26FB8321000F5984 /* Home.swift in Sources */,
 				80BDC28826FB9C2A00D7F07A /* CustomCorners.swift in Sources */,
