@@ -13,7 +13,7 @@ struct PageIndicator: View {
     
     var body: some View {
         HStack(spacing: 5) {
-            ForEach(tabs.indices, id: \.self) { index in
+            ForEach(tabs.indices) { index in
                 Capsule()
                     .fill(Color.white.opacity(currentIndex == index ? 1 : 0.5))
                     .frame(width: currentIndex == index ? 18 : 4, height: 4)
