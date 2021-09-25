@@ -8,44 +8,32 @@
 import SwiftUI
 
 struct Home: View {
+    
+    @State var tabs: [Tab] = [Tab(number: 1), Tab(number: 2), Tab(number: 3)]    
+    @State var currentIndex: Int = 0
+    
     var body: some View {
         VStack(spacing: 0) {
-            TopPanelButton()
-                .overlay(
-                    //Custom page indicator
-                    HStack(spacing: 4) {
-                        
-                    }
-                )
-                .padding()
+            Heading()
+  
+//            ScrollView(.init(), showsIndicators: false) {
+//                VStack {
+//                    Spacer()
+//
+//                    //Carusel Slider
+//                    InfiniteCarousel(tabs: $tabs, currentIndex: $currentIndex)
+//
+//                    Spacer()
+//                }
+//            }
             
-            //ScrollView for adapting for small screens
-            ScrollView(getRect().height < 750 ? .vertical : .init(), showsIndicators: false) {
-                VStack(spacing: 20) {
-                    Text("Prepare training")
-                        .fontWeight(.bold)
-                        .foregroundColor(.white.opacity(0.6))
-                        .padding(.top, 20)
-                    
-                    Text("Let's create a\ntraning plan\nfor you!")
-                        .font(.system(size: 38, weight: .bold))
-                        .multilineTextAlignment(.center)
-                        .lineLimit(3)
-                        .foregroundColor(.white)
-                    
-                    //Carusel Slider
-                    TabView {
-                        
-                    }
-                    .tabViewStyle(.page(indexDisplayMode: .never))
-                }
-                .padding()
-                .frame(maxWidth: .infinity, alignment: .center)
-            }
+            //Custom page indicator
+            PageIndicator(tabs: tabs, currentIndex: currentIndex)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
-            LinearGradient(colors: [Color.blueApp, .purpleApp], startPoint: .top, endPoint: .bottom)
+            Image("background")
+                .resizable()
                 .ignoresSafeArea()
             
         )

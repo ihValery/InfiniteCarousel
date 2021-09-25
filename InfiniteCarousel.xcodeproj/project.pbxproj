@@ -8,25 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		8022A6E826FB76B4000F5984 /* InfiniteCarouselApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8022A6E726FB76B4000F5984 /* InfiniteCarouselApp.swift */; };
-		8022A6EA26FB76B4000F5984 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8022A6E926FB76B4000F5984 /* ContentView.swift */; };
 		8022A6EC26FB76B7000F5984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8022A6EB26FB76B7000F5984 /* Assets.xcassets */; };
 		8022A6EF26FB76B7000F5984 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8022A6EE26FB76B7000F5984 /* Preview Assets.xcassets */; };
-		8022A6F926FB827B000F5984 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8022A6F826FB827B000F5984 /* Color.swift */; };
 		8022A6FB26FB8321000F5984 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8022A6FA26FB8321000F5984 /* Home.swift */; };
-		80BDC28126FB8A8E00D7F07A /* TopPanelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC28026FB8A8E00D7F07A /* TopPanelButton.swift */; };
 		80BDC28326FB8C7F00D7F07A /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC28226FB8C7F00D7F07A /* View.swift */; };
+		80BDC28A26FBA2D600D7F07A /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC28926FBA2D600D7F07A /* Tab.swift */; };
+		80BDC28C26FBA40500D7F07A /* InfiniteCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC28B26FBA40500D7F07A /* InfiniteCarousel.swift */; };
+		80BDC28E26FBB4C200D7F07A /* OffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC28D26FBB4C200D7F07A /* OffsetKey.swift */; };
+		80BDC29126FC19A100D7F07A /* OrnamentalVersals.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80BDC29026FC19A100D7F07A /* OrnamentalVersals.ttf */; };
+		80BDC29326FC1AA600D7F07A /* CustomFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC29226FC1AA600D7F07A /* CustomFontModifier.swift */; };
+		80BDC29726FE85A100D7F07A /* PageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC29626FE85A000D7F07A /* PageIndicator.swift */; };
+		80BDC29926FE94D700D7F07A /* Heading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDC29826FE94D700D7F07A /* Heading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8022A6E426FB76B4000F5984 /* Infinite Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Infinite Carousel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8022A6E726FB76B4000F5984 /* InfiniteCarouselApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCarouselApp.swift; sourceTree = "<group>"; };
-		8022A6E926FB76B4000F5984 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8022A6EB26FB76B7000F5984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8022A6EE26FB76B7000F5984 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8022A6F826FB827B000F5984 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		8022A6FA26FB8321000F5984 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		80BDC28026FB8A8E00D7F07A /* TopPanelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPanelButton.swift; sourceTree = "<group>"; };
 		80BDC28226FB8C7F00D7F07A /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		80BDC28926FBA2D600D7F07A /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		80BDC28B26FBA40500D7F07A /* InfiniteCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCarousel.swift; sourceTree = "<group>"; };
+		80BDC28D26FBB4C200D7F07A /* OffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetKey.swift; sourceTree = "<group>"; };
+		80BDC28F26FBEC5F00D7F07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80BDC29026FC19A100D7F07A /* OrnamentalVersals.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OrnamentalVersals.ttf; sourceTree = "<group>"; };
+		80BDC29226FC1AA600D7F07A /* CustomFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontModifier.swift; sourceTree = "<group>"; };
+		80BDC29626FE85A000D7F07A /* PageIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIndicator.swift; sourceTree = "<group>"; };
+		80BDC29826FE94D700D7F07A /* Heading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				8022A6E626FB76B4000F5984 /* InfiniteCarousel */,
-				8022A6E926FB76B4000F5984 /* ContentView.swift */,
 				8022A6E526FB76B4000F5984 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,7 +72,10 @@
 				8022A6F526FB78B6000F5984 /* Model */,
 				8022A6F626FB78C4000F5984 /* View */,
 				8022A6F726FB825E000F5984 /* Extension */,
+				80BDC28626FB9BF000D7F07A /* Helper */,
+				80BDC28F26FBEC5F00D7F07A /* Info.plist */,
 				8022A6EB26FB76B7000F5984 /* Assets.xcassets */,
+				80BDC29026FC19A100D7F07A /* OrnamentalVersals.ttf */,
 				8022A6ED26FB76B7000F5984 /* Preview Content */,
 			);
 			path = InfiniteCarousel;
@@ -81,6 +92,7 @@
 		8022A6F526FB78B6000F5984 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				80BDC28926FBA2D600D7F07A /* Tab.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,7 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				8022A6FA26FB8321000F5984 /* Home.swift */,
-				80BDC28026FB8A8E00D7F07A /* TopPanelButton.swift */,
+				80BDC29826FE94D700D7F07A /* Heading.swift */,
+				80BDC28B26FBA40500D7F07A /* InfiniteCarousel.swift */,
+				80BDC29626FE85A000D7F07A /* PageIndicator.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,10 +111,18 @@
 		8022A6F726FB825E000F5984 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8022A6F826FB827B000F5984 /* Color.swift */,
 				80BDC28226FB8C7F00D7F07A /* View.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		80BDC28626FB9BF000D7F07A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				80BDC28D26FBB4C200D7F07A /* OffsetKey.swift */,
+				80BDC29226FC1AA600D7F07A /* CustomFontModifier.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8022A6EF26FB76B7000F5984 /* Preview Assets.xcassets in Resources */,
+				80BDC29126FC19A100D7F07A /* OrnamentalVersals.ttf in Resources */,
 				8022A6EC26FB76B7000F5984 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,12 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80BDC28126FB8A8E00D7F07A /* TopPanelButton.swift in Sources */,
-				8022A6EA26FB76B4000F5984 /* ContentView.swift in Sources */,
+				80BDC29926FE94D700D7F07A /* Heading.swift in Sources */,
+				80BDC28C26FBA40500D7F07A /* InfiniteCarousel.swift in Sources */,
 				80BDC28326FB8C7F00D7F07A /* View.swift in Sources */,
+				80BDC29726FE85A100D7F07A /* PageIndicator.swift in Sources */,
 				8022A6E826FB76B4000F5984 /* InfiniteCarouselApp.swift in Sources */,
 				8022A6FB26FB8321000F5984 /* Home.swift in Sources */,
-				8022A6F926FB827B000F5984 /* Color.swift in Sources */,
+				80BDC28A26FBA2D600D7F07A /* Tab.swift in Sources */,
+				80BDC29326FC1AA600D7F07A /* CustomFontModifier.swift in Sources */,
+				80BDC28E26FBB4C200D7F07A /* OffsetKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -291,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -307,22 +333,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 2.401.13;
 				DEVELOPMENT_ASSET_PATHS = "\"InfiniteCarousel/Preview Content\"";
 				DEVELOPMENT_TEAM = 879U287R5Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = InfiniteCarousel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ihValery.InfiniteCarousel;
 				PRODUCT_NAME = "Infinite Carousel";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -337,22 +364,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 2.401.13;
 				DEVELOPMENT_ASSET_PATHS = "\"InfiniteCarousel/Preview Content\"";
 				DEVELOPMENT_TEAM = 879U287R5Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = InfiniteCarousel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ihValery.InfiniteCarousel;
 				PRODUCT_NAME = "Infinite Carousel";
 				SWIFT_EMIT_LOC_STRINGS = YES;
