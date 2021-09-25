@@ -7,7 +7,7 @@
 - помог protocol PreferenceKey
     - "Представление с несколькими дочерними элементами автоматически объединяет свои значения для данного предпочтения в одно значение, видимое его предкам."
     - "Идеально для плавающего облачка"
-    - добить статью на swiftUI lab
+    - добить статью на https://swiftui-lab.com/communicating-with-the-view-tree-part-1/
     
 - сustom Font Modifier
     - ViewModifier (struct + extension) = .largeTitle(), .foregroundColor(Color:).
