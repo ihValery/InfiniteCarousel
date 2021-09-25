@@ -35,9 +35,9 @@ struct InfiniteCarousel: View {
                             .preference(key: OffsetKey.self, value: gr.frame(in: .global).minX)
                     }
                 )
-                .onPreferenceChange(OffsetKey.self, perform: { offset in
+                .onPreferenceChange(OffsetKey.self) { offset in
                     self.offset = offset
-                })
+                }
                 //For animation transition
 
                 .tag(getIndex(tab: tab))
@@ -53,7 +53,7 @@ struct InfiniteCarousel: View {
         
         //To avoid glitch
         //Updating after user released
-        .onChange(of: offset) { newValue in
+        .onChange(of: offset) { _ in
             if fakeIndex == 0 && offset == 0 {
                 fakeIndex = tabs.count - 2
             }
@@ -61,6 +61,8 @@ struct InfiniteCarousel: View {
             if fakeIndex == tabs.count - 1 && offset == 0 {
                 fakeIndex = 1
             }
+            
+            currentIndex = fakeIndex - 1
         }
                 
         .onAppear {
@@ -76,11 +78,6 @@ struct InfiniteCarousel: View {
             tabs.insert(last, at: 0)
             
             fakeIndex = 1
-        }
-        
-        //Updatind currentIndex
-        .onChange(of: fakeIndex) { newValue in
-            currentIndex = fakeIndex - 1
         }
     }
     
